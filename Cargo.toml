@@ -1,0 +1,16 @@
+[package]
+name = "tempus"
+version = "0.1.0"
+description = "Rust TUI App"
+authors = ["Samuel Rivera <dnbsammie>"]
+license = "GNU"
+edition = "2024"
+
+[dependencies]
+ratatui = "0.30.0"
+
+[profile.release]
+codegen-units = 1 
+lto = true
+opt-level = "s"
+strip = true
